@@ -45,14 +45,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Clases\Figuras.cs" />
+    <Compile Include="Clases\Reglas.cs" />
+    <Compile Include="Clases\Tablero.cs" />
+    <Compile Include="Control\ControlCuadricula.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ControlCuadricula.Designer.cs">
+      <DependentUpon>ControlCuadricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JuegoAjedrezForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="JuegoAjedrezForm.Designer.cs">
+      <DependentUpon>JuegoAjedrezForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="JuegoAjedrezForm.resx">
+      <DependentUpon>JuegoAjedrezForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,6 +73,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -74,6 +87,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\alfil_blanco.png" />
+    <Content Include="Resources\alfil_negro.png" />
+    <Content Include="Resources\caballo_blanco.png" />
+    <Content Include="Resources\caballo_negro.png" />
+    <Content Include="Resources\peon_blanco.png" />
+    <Content Include="Resources\peon_negro.png" />
+    <Content Include="Resources\reina_blanco.png" />
+    <Content Include="Resources\reina_negro.png" />
+    <Content Include="Resources\rey_blanco.png" />
+    <Content Include="Resources\rey_negro.png" />
+    <Content Include="Resources\torre_blanco.png" />
+    <Content Include="Resources\torre_negro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

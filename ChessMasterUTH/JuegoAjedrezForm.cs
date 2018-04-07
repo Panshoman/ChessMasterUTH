@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ChessMasterUTH
 {
-    public partial class Form1 : Form
+    public partial class JuegoAjedrezForm : Form
     {
-        public Form1()
+        public JuegoAjedrezForm()
         {
             InitializeComponent();
         }
